@@ -23,7 +23,7 @@
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
                     <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> on
-                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>, tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
+                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY MM DD'}}</time>, теги {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
                 </div>
                 <center><a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a></center>
             </div>
@@ -44,7 +44,7 @@
 
                         img.remove();
                     });
-
+теги 
                     var $window = $(window),
                         $image = $('.post-image-image');
                     $window.on('scroll', function() {
@@ -90,7 +90,7 @@
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
                     <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> on
-                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>, tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
+                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY MM DD'}}</time>, теги {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
                 </div>
             </div>
         </div>
@@ -126,23 +126,23 @@
 
             <div class="bottom-teaser cf">
                 <div class="isLeft">
-                    <h5 class="index-headline featured"><span>Written by</span></h5>
+                    <h5 class="index-headline featured"><span>Автори</span></h5>
                     <section class="author">
                         <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
                         <h4>{{author.name}}</h4>
                         <p class="bio">{{author.bio}}</p>
                         <hr>
-                        <p class="published">Published <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></p>
+                        <p class="published">Опубликовано <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY-MM-DD'}}</time></p>
                     </section>
                 </div>
                 {{/post}}
                 <div class="isRight">
-                    <h5 class="index-headline featured"><span>Supported by</span></h5>
+                    <h5 class="index-headline featured"><span>При поддержке</span></h5>
                     <footer class="site-footer">
-                        <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"> Ghost</a></section>
-                        <a class="subscribe" href="{{@blog.url}}/rss/"><span class="tooltip">You should subscribe to my RSS feed.</span></a>
+                        <section class="poweredby">Опубликовано на платформе <a class="icon-ghost" href="http://ghost.org"> Ghost</a></section>
+                        <a class="subscribe" href="{{@blog.url}}/rss/"><span class="tooltip">Подписаться на RSS feed.</span></a>
                         <div class="inner">
-                             <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}}<br>All rights reserved.</section>
+                             <section class="copyright">Копирайт на весь контент <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}}<br>Все права защищены.</section>
 
                         </div>
                     </footer>
@@ -160,6 +160,6 @@
     <div class="inner">
         <h1 class="blog-title">{{@blog.title}}</h1>
         <h2 class="blog-description">{{@blog.description}}</h2>
-        <a href="/" class="btn">Back to Overview</a>
+        <a href="/" class="btn">Вернуться к обзору</a>
     </div>
 </div>

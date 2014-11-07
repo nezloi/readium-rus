@@ -103,21 +103,25 @@
 
 <footer class="site-footer">
 
-      <form>
-        <input id="search-field" placeholder="Поиск"/>
-      </form>
-        
-      <section id="results"></section>
+	<!-- search -->
 
-      <script>
-        var searchField = $("#search-field").ghostHunter({
+	<div align="center" class="search-block">
+		<form>
+        		<input id="search-field" placeholder="Поиск"/>
+      		</form>
+
+      		<section id="results"></section>
+
+      		<script>
+        		var searchField = $("#search-field").ghostHunter({
                             results     : "#results",
                             onKeyUp   : true,
 			    info_template   : "<p>Постов найдено: \{\{amount\}\}</p>",
 			    result_template : "<a href='\{\{link\}\}'><p><h2>\{\{title\}\}</h2></p></a>",
 			    zeroResultsInfo     : false
                           });
-     </script>
+     		</script>
+	</div>
 
     <hr style="height:1px;border:none;color:#dededc;background-color:#dededc;" />
 

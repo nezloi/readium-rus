@@ -150,7 +150,27 @@ the {body} of the default.hbs template, which contains our header/footer. }}
                 </div>
             </div>
 
-    </article>
+	<!-- search -->
+
+	<div align="center" class="search-block">
+		<form>
+        		<input id="search-field" placeholder="Поиск"/>
+      		</form>
+
+      		<section id="results"></section>
+
+      		<script>
+        		var searchField = $("#search-field").ghostHunter({
+                            results     : "#results",
+                            onKeyUp   : true,
+			    info_template   : "<p>Постов найдено: \{\{amount\}\}</p>",
+			    result_template : "<a href='\{\{link\}\}'><p><h2>\{\{title\}\}</h2></p></a>",
+			    zeroResultsInfo     : false
+                          });
+     		</script>
+	</div>
+
+     </article>
 
 </main>
 

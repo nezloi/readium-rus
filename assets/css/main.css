@@ -255,6 +255,21 @@ body {
     .site-footer a:hover {
       color: #333333; }
 
+.search-block {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  font-size: 12px;
+  text-align: center;
+  color: #999999;
+  line-height: 17.6px; }
+  .search-block a {
+    color: #666666;
+    text-decoration: none; }
+    .search-block a:hover {
+      color: #333333; }
+
+
 .post .article-image {
   position: absolute;
   background-color: black;

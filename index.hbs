@@ -102,6 +102,25 @@
 </main>
 
 <footer class="site-footer">
+
+      <form>
+        <input id="search-field" placeholder="Поиск"/>
+      </form>
+        
+      <section id="results"></section>
+
+      <script>
+        var searchField = $("#search-field").ghostHunter({
+                            results     : "#results",
+                            onKeyUp   : true,
+			    info_template   : "<p>Постов найдено: \{\{amount\}\}</p>",
+			    result_template : "<a href='\{\{link\}\}'><p><h2>\{\{title\}\}</h2></p></a>",
+			    zeroResultsInfo     : false
+                          });
+     </script>
+
+    <hr style="height:1px;border:none;color:#dededc;background-color:#dededc;" />
+
     <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip"> RSS!</span></a>
     <div class="inner">
          <section class="copyright">Копирайт на весь контент <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; Все права защищены.</section>

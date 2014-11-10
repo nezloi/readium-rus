@@ -45,10 +45,10 @@
 
 {{! The main content area on the homepage }}
 <main class="content" role="main">
-    
-    <a href="/">Back to Overview</a>
-
-    <h5 class="index-headline normal"><span>Article list for {{tag.name}}</span></h5>
+    <div style="text-align: center">
+    <a style=center href="/">Вернуться к началу</a>
+    </div>
+    <h5 class="index-headline normal"><span>Список статей под тегом {{tag.name}}</span></h5>
 
     <div class="cf frame">
     {{#foreach posts}}
@@ -60,7 +60,7 @@
                 <section class="post-excerpt" itemprop="description">
                     <p>{{excerpt characters="150"}}&hellip;</p>
                 </section>
-                <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</div>
+                <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time> {{tags prefix="в "}}</div>
             </div>
         </article>
     {{/foreach}}
@@ -78,12 +78,6 @@
          <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
          <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
     </div>
-</footer>
-
-
-
-
-
-
+</foot
 
 

@@ -23,7 +23,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 	<div class="cf post-meta-text">
 	    <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
 	    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author}}</h4>, 
-	    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY-MM-DD'}}</time>, теги {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
+	    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY-MM-DD'}}</time>, теги: {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
 	</div>
 	<center><a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a></center>
     </div>
@@ -90,7 +90,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 	<div class="cf post-meta-text">
 	    <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
 	    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author}}</h4>,  
-	    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY-MM-DD'}}</time>, теги {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
+	    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY-MM-DD'}}</time>, теги: {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
 	</div>
     </div>
 </div>
@@ -103,7 +103,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 
     <section class="post-content">
 	<div class="post-reading">
-	    <span class="post-reading-time"></span> read
+	    <span class="post-reading-time"></span> читать
 	</div>
 	<a name="topofpage"></a>
 	{{content}}
